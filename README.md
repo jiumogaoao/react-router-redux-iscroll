@@ -828,7 +828,7 @@ in the environment inside a `<form>`:
 render() {
   return (
     <div>
-      <small>You are running this application in <b>{process.env.NODE_ENV}</b> mode.</small>
+      <small>You are running this application in <BB>{process.env.NODE_ENV}</BB> mode.</small>
       <form>
         <input type="hidden" defaultValue={process.env.REACT_APP_SECRET_CODE} />
       </form>
@@ -843,7 +843,7 @@ When you load the app in the browser and inspect the `<input>`, you will see its
 
 ```html
 <div>
-  <small>You are running this application in <b>development</b> mode.</small>
+  <small>You are running this application in <BB>development</BB> mode.</small>
   <form>
     <input type="hidden" value="abcdef" />
   </form>
